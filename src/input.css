@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Oswald:wght@300;400;500;600;700&display=swap');
+@layer base {
+html{
+    @apply scroll-smooth;
+}
+
+    body{
+        @apply text-whiteColor bg-primaryColor tracking-wider font-dmsans dark:bg-darkcolor;
+    }
+    section {
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+
+@layer components {
+    .btn{
+    @apply inline-block text-sm py-3 px-8 capitalize text-center cursor-pointer rounded-md ease-linear duration-200;
+}
+
+.btn-primary {
+    @apply text-blackcolor bg-secondaryColor hover:opacity-75;
+}
+
+}
+
+@layer utilities {
+    .home__title, .card__title, .section__tittle {
+        @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
+    }
+    .section__tittle {
+        @apply text-3xl;
+    }
+    .card__title{
+        @apply text-xl;
+    }
+    .separatore{
+        @apply w-28 h-[2px] bg-secondaryColor my-5;
+    }
+    .paragaraph{
+        @apply text-paraGraphColor text-xs leading-5;
+    }
+}
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+    @apply bg-secondaryColor text-blackcolor;
+}
+
+
+
+
+/* .header {
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+} */
+
+
+/* .navbar {
+    max-width: 1024px;
+    background-color: #0f004a;
+    margin: auto;
+    height: 56px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+} */
